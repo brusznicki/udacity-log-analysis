@@ -9,7 +9,7 @@ class LogAnalysis():
     '''LogAnalysis class that creates reports for 3 project questions'''
 
     def __init__(self):
-        self.dbName = DBNAME
+        self.db_name = DBNAME
 
     def main(self):
         '''Runs the SQL scripts to generate answers to questions.'''
@@ -95,9 +95,8 @@ class LogAnalysis():
 
     def execute_query(self, query):
         """Executes query, returns result"""
-
         if query:
-            db = self.db_connect(self.dbName)
+            db = self.db_connect(self.db_name)
             c = db.cursor()
             c.execute(query)
             result = c.fetchall()
@@ -111,7 +110,7 @@ class LogAnalysis():
         try:
             db = psycopg2.connect("dbname={}".format(db_name))
             return db
-        except psycopg2.Error as e:
+        except:
             print "Unable to connect to {}, check your connection"\
                   .format(db_name)
             return None
