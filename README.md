@@ -49,8 +49,8 @@ If the quickstart is followed exactly, the reponses should be as follows:
 Candidate is jerk, alleges rival -- 338,647 views
 Bears love berries, alleges bear -- 253,801 views
 Bad things gone, say good people -- 170,098 views
-========================================================```
-
+========================================================
+```
 ```
 ********************************************************
 2. Who are the most popular article authors of all time?
@@ -61,7 +61,6 @@ Anonymous Contributor -- 170,098 views
 Markoff Chaney -- 84,557 views
 ========================================================
 ```
-
 ```
 *************************************************************
 3. On which days did more than 1% of requests lead to errors?
