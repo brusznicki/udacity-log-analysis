@@ -32,38 +32,46 @@ By following the quickstart, you will produce three reports that answer the proj
 Reports are rendered in a plain text format that is amenable to pasting into email or as part of a response to be used in other application (JSON, etc.). Reports include the question and responses in the following format:
 
 ```
+***********************************************************************
 Question to be answered
-------------------------------------------------------
+        
+***********************************************************************
 response data
-------------------------------------------------------
+=======================================================================
 ```
 
 If the quickstart is followed exactly, the reponses should be as follows:
 
 ```
+*****************************************************************
 1. What are the most popular three articles of all time?
-------------------------------------------------------
-'Candidate is jerk, alleges rival' -- 338,647 views
-'Bears love berries, alleges bear' -- 253,801 views
-'Bad things gone, say good people' -- 170,098 views
-------------------------------------------------------
+        
+*****************************************************************
+Candidate is jerk, alleges rival -- 338,647 views
+Bears love berries, alleges bear -- 253,801 views
+Bad things gone, say good people -- 170,098 views
+=================================================================
 ```
 
 ```
+*****************************************************************
 2. Who are the most popular article authors of all time?
-------------------------------------------------------
-'Ursula La Multa' -- 507,594 views
-'Rudolf von Treppenwitz' -- 423,457 views
-'Anonymous Contributor' -- 170,098 views
-'Markoff Chaney' -- 84,557 views
-------------------------------------------------------
+        
+*****************************************************************
+Ursula La Multa -- 507,594 views
+Rudolf von Treppenwitz -- 423,457 views
+Anonymous Contributor -- 170,098 views
+Markoff Chaney -- 84,557 views
+=================================================================
 ```
 
 ```
-3. On which days did more than 1% of requests lead to errors?
-------------------------------------------------------
-July 7, 2016 -- 2.26% errors
-------------------------------------------------------
+***********************************************************************
+3. On which days did more than 1% of requests lead to errors?'
+        
+***********************************************************************
+July 17, 2016 -- 2.26% errors
+=======================================================================
 ```
 
 ## Todos
