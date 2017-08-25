@@ -28,9 +28,7 @@ class LogAnalysis():
         questions = {}  # Hash of questions and associated queries
 
         # LOG ANALYSIS QUESTION 1
-        question1 = """1. What are the most popular three articles of all time?
-        """
-
+        question1 = "1. What are the most popular three articles of all time?"
         query1 = """
             SELECT a.title, TO_CHAR(views, 'FM999,999,999')
                 FROM articles a
@@ -47,8 +45,7 @@ class LogAnalysis():
                         'label': ' views'}
 
         # LOG ANALYSIS QUESTION 2
-        question2 = """2. Who are the most popular article authors of all time?
-        """
+        question2 = "2. Who are the most popular article authors of all time?"
         query2 = """
             SELECT authors.name, TO_CHAR(sum(views), 'FM999,999,999')
                 FROM articles
@@ -67,8 +64,8 @@ class LogAnalysis():
                         'label': ' views'}
 
         # LOG ANALYSIS QUESTION 3
-        question3 = """3. On which days did more than 1% of requests lead to errors?'
-        """
+        question3 = ("3. On which days did more than 1% of requests lead "
+                     "to errors?")
         query3 = """
             SELECT TO_CHAR(date_trunc('day', day), 'FMMonth DD, YYYY'),
                    round(fail*100.0 / (fail + success),2)
